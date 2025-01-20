@@ -1,0 +1,3 @@
+* Nonce
+* Data URI (data:)
+* 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++/Quick Review.md",
+                "file": "DSA/Recursion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quick Review"
+              "title": "Recursion"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "DSA/Recursion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "Backlinks for Recursion"
             }
           },
           {
@@ -165,15 +165,31 @@
   },
   "active": "e46bd6651d55a31a",
   "lastOpenFiles": [
-    "Typescript/Typescript compiler.md",
+    "C++/Feature Revision Notes.md",
+    "Pasted image 20250106072408.png",
     "C++/Quick Review.md",
-    "C++",
-    "Typescript/Triple Slash Directives.md",
+    "DSA/Recursion.md",
+    "Javascript/Dependency Pre-Bundling.md",
+    "DSA",
+    "Javascript/Build Optimizations.md",
+    "Javascript/Content Security Policy (CSP).md",
+    "Vite/Things to Remember.md",
+    "Javascript/Web Workers.md",
+    "CSS/CSS Modules.md",
+    "CSS/Import Inlining in CSS.md",
+    "CSS/PostCss.md",
+    "CSS",
+    "Typescript/Typescript compiler.md",
+    "Vite",
     "Javascript/Hot Module Replacement.md",
-    "Typescript",
-    "Javascript/Dependency Resolution.md",
     "Javascript/Native ES Modules.md",
+    "Javascript/Dependency Resolution.md",
+    "Typescript/Triple Slash Directives.md",
     "Welcome.md",
+    "C++/Concept List.md",
+    "gcm-linux.tar.gz",
+    "C++",
+    "Typescript",
     "Javascript"
   ]
 }

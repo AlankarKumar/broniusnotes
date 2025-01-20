@@ -178,3 +178,155 @@ int func(int &x, int &y);
 func(a, b)
 ```
 
+## Arrays as Parameters
+
+Arrays can be passed only by address
+
+```
+fun(int A[], int n)
+
+int main (){
+int A[5] = {1,2,3,4,5};
+fun(A,5)
+}
+```
+
+How to return an array
+
+```
+int * fun(int n){
+int *p;
+p = new int[n];
+return p;
+}
+```
+
+## Structures as Parameter
+
+```
+int area( struct Rectangle r1){} //call by value
+
+int area(struct Rectangle &r1){} //call by reference
+
+void changeLength(struct Rectangle *p, int length){} //call by address
+
+struct Rectangle r = {10,5};
+changeLength(&r, 20);
+
+
+
+```
+
+When a structure is passed by value, if the structure has array data members , the array will be copied and a new copy will be created for the function.
+
+```
+
+struct Rectangle {
+ int length;
+ int breadth;
+ int edges[4];
+};
+
+void changeLength(struct Rectangle *p){
+ for(int i = 0 ; i < 4 ; i++){
+   p -> edges[i] = i+2;
+ } 
+ 
+}
+
+//Rectangle as a Struct member variable passed as a pointer
+/*struct Rectangle r ; */
+/*r.length = 10;*/
+/*r.breadth = 5;*/
+/*for(int i=0 ; i < 4; i++){*/
+/*  r.edges[i] = i+1;*/
+/*}*/
+/*changeLength(&r);*/
+/**/
+/*for(int i=0 ; i < 4; i++){*/
+/*  cout << r.edges[i] << endl;*/
+/*}*/
+
+```
+
+
+## Classes and Constructors
+
+Structure everything is public in class everything is private by default.
+
+```
+class Rectangle {
+private: 
+int length;
+int breadth;
+
+public: 
+ Rectangle(){length=breadth=1;}
+ Rectagnle(int l , int b);
+int area();
+int perimeter();
+int getLength(){return length;};
+void setLength(int l){length = l;}
+~Rectangle();
+}
+
+Rectangle::Rectangle(int l, int b){
+length = l;
+breadth = b;
+}
+
+int Rectangle::area(){
+return length * breadth;
+}
+
+int Rectangle::Permiter(){
+return 2*(length + breadth)
+}
+
+Rectangle::~Rectangle(){}
+``` 
+
+
+## Template Classes
+
+### Generic Classes
+
+```
+template <class T>
+class Arithmetic{
+private: 
+T a;
+T b;
+
+public: 
+Arithmetic(T a, T b);
+T add();
+T sub();
+}
+
+template <class T>
+Arithmetic<T>::Arithmetic(T a, T b){
+this -> a = a;
+this -> b = b;
+}
+
+template <class T>
+T Arithmetic<T>::add(){
+	T c;
+	c = a+b;
+	return c;
+}
+
+template <class t>
+T Arithmetic<T>::sub(){
+T c;
+c = a-b;
+return c;
+}
+
+
+int main(){
+Arithmetic<int> ar(10,5);
+cout << ar.add() << endl;
+}
+```
