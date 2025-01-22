@@ -148,5 +148,143 @@ void headRecursion(int n) {
 ```
 
 
+#### Linear Recursion
+
+Functions which do processing before and after the recursive call but there is only one recursive call . 
+
+```
+void linearRecursion(int n) {
+  if (n > 0) {
+    cout << n << endl;
+    linearRecursion(n - 1);
+    cout << n << endl;
+  }
+};
+
+```
+
+
 #### Tree Recursion
 
+If a recursive function is calling itself more than one time its a tree recursion . 
+
+```
+void treeRecursion(int n) {
+  if (n > 0) {
+    treeRecursion(n - 1);
+
+    cout << n << endl;
+
+    treeRecursion(n - 1);
+  }
+}
+
+```
+
+![[Pasted image 20250121061728.png]]
+
+Number of calls made at each level  = 1 + 2 + 4 + 8 = 15
+
+Which is equal to 
+
+$$
+2^0 + 2^1 + 2^2 + 2^3 = 15
+$$
+Sum of GP series  =  $$ 2^(n_+1) -1 $$
+
+Time complexity = O (2^n);
+
+Space Complexity = O (n);
+
+
+
+#### Indirect Recursion
+
+There are two or more functions which are calling each other in a circular order. 
+
+
+```
+
+```
+
+![[Pasted image 20250121063644.png]]
+
+
+#### Nested Recursion
+
+![[Pasted image 20250121065525.png]]
+
+#### Sum of N natural numbers
+```
+int sum(int n) {
+  if (n == 0) {
+    return 0;
+  } else {
+    return sum(n - 1) + n;
+  }
+}
+
+```
+
+Formula : $$ (n*(n+1))/2 $$
+$$ T(n) = O(n) $$
+$$ S(n) = O(n) $$
+
+#### Factorial of a number
+
+```
+int factorial(int n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return factorial(n - 1) * n;
+  }
+}
+
+```
+
+
+#### Exponents using recursion 
+
+```
+// Exponent using recursion
+long int exponent(long int base, int power) {
+  if (power == 0)
+    return 1;
+  else
+    return base * exponent(base, power - 1);
+}
+
+//Optimization
+long int exponentOptimized(long int base, int power) {
+  if (power == 0)
+    return 1;
+  if (power % 2 == 0) {
+    return exponent(base * base, power / 2);
+  } else {
+    return base * exponent(base * base, power / 2);
+  }
+}
+
+
+//driver
+  auto start1 = chrono::high_resolution_clock::now();
+  cout << "Exponent" << endl;
+  cout << exponent(1000, 1000) << endl;
+  auto end1 = chrono::high_resolution_clock::now();
+
+  auto start2 = chrono::high_resolution_clock::now();
+  cout << "Optimized Exponent" << endl;
+  cout << exponentOptimized(1000, 1000) << endl;
+  auto end2 = chrono::high_resolution_clock::now();
+
+  auto duration1 = chrono::duration_cast<chrono::microseconds>(end1 - start1);
+  auto duration2 = chrono::duration_cast<chrono::microseconds>(end2 - start2);
+
+  cout << "Duration 1 : " << duration1.count() << endl;
+  cout << "Duration 2 : " << duration2.count() << endl;
+
+```
+
+
+#### Taylor Series $$e^x$$
