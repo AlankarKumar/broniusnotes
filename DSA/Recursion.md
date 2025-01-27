@@ -287,4 +287,183 @@ long int exponentOptimized(long int base, int power) {
 ```
 
 
-#### Taylor Series $$e^x$$
+#### Taylor Series $$e^x = 1 + x/1 + x^2/2! + x^3/3! + ...... + n terms
+$$
+
+```
+Without static variable
+
+long double taylorSeries(int base, long int n) {
+  if (n == 0) {
+    return 1;
+  } else {
+    return taylorSeries(base, n - 1) +
+           exponentOptimized(base, n) / factorial(n);
+  }
+}
+
+With static variable
+long double staticTaylorRecursive(int base, int n) {
+  static double numerator = 1, denominator = 1;
+  double r;
+  if (n == 0) {
+    return 1;
+  } else {
+    r = staticTaylorRecursive(base, n - 1);
+    numerator *= base;
+    denominator *= n;
+    return r + (numerator / denominator);
+  }
+}
+
+
+With Horner's rule
+// taylor series with Horner's rule
+long double hornerTalyorIterative(int base, int n) {
+  double s = 1;
+  for (; n > 0; n--) {
+    s = 1 + base / (n * s);
+  }
+  return s;
+}
+
+//recursive taylor series with Horner
+long double hornerTaylorRecursive(int base, int n) {
+  static double s = 1;
+  if (n == 0) {
+    return s;
+  }
+  s = 1 + base / (n * s);
+  return hornerTaylorRecursive(base, n - 1);
+}
+
+
+```
+
+##### Taylor series and static variables in recursion 
+
+
+Actual addition starts at returning time, same for factorial and the power. 
+
+
+**_ WHEN YOU HAVE RETURN MULTIPLE VALUES IN A RECURSIVE FUNCTION THEN WE CAN USE STATIC VARIABLES _**
+
+
+##### Horner's Rule
+
+$$
+e^x = 1 + x/1 + x^2/2! + x^3/3! + .....+ n 
+$$
+
+$$
+e^x = 1+ x/1[1 + x/2[1 + x/3[1+ x/n]]]
+$$
+
+#### Fibonacci series
+
+Definition
+
+$$ 
+fib(n) = 
+\begin{cases}
+0 & \text{if } n = 0, \\
+1 & \text{if } n = 1, \\
+fib(n-1) + fib(n-1) & \text{if } n > 1.
+\end{cases}
+$$
+
+```
+long int fib(int n) {
+  if (n <= 1)
+    return n;
+  return fib(n - 1) + fib(n - 2);
+}
+T(n) = O(2^n)
+
+
+long int fibIterative(int n) {
+  int t0 = 0, t1 = 1;
+  int tn = 0;
+  if (n == 0 || n == 1)
+    return n;
+  for (int i = 2; i <= n; i++) {
+    tn = t0 + t1;
+    t0 = t1;
+    t1 = tn;
+  }
+  return tn;
+}
+```
+
+##### Memoization
+
+```
+int F[10];
+long int fibRecursiveMemoized(int n) {
+  if (n <= 1) {
+    F[n] = n;
+    return n;
+  } else {
+    if (F[n - 2] == -1) {
+      F[n - 2] = fibRecursiveMemoized(n - 2);
+    }
+    if (F[n - 1] == -1) {
+      F[n - 1] = fibRecursiveMemoized(n - 1);
+    }
+    return F[n - 2] + F[n - 1];
+  }
+};
+
+```
+
+
+#### Recursive $$ ^nCr $$
+```
+```
+
+##### Pascal's triangle
+
+
+##### How Pascal's Triangle Relates to \( nCr \):
+
+The \( n \)-th row of Pascal's Triangle represents all the combinations \( nC0, nC1, \dots, nCn \).
+
+### Examples:
+- **Row 0**:  
+  \( 1 \) (\( 0C0 \))  
+- **Row 1**:  
+  \( 1, 1 \) (\( 1C0, 1C1 \))  
+- **Row 2**:  
+  \( 1, 2, 1 \) (\( 2C0, 2C1, 2C2 \))  
+- **Row 3**:  
+  \( 1, 3, 3, 1 \) (\( 3C0, 3C1, 3C2, 3C3 \))  
+- **Row 4**:  
+  \( 1, 4, 6, 4, 1 \) (\( 4C0, 4C1, 4C2, 4C3, 4C4 \))
+
+
+
+
+##### Pascal's Triangle and Binomial Coefficients
+
+Below is Pascal's Triangle, where each entry corresponds to \( nCr = \frac{n!}{r!(n-r)!} \).
+
+                           1
+                        1     1
+                     1     2     1
+                  1     3     3     1
+               1     4     6     4     1
+               1, =101**20th
+
+
+
+
+```
+int combination(int n, int r) {
+  if (r == 0 || n == r) {
+    return 1;
+  } else {
+    return combination(n - 1, r - 1) + combination(n - 1, r);
+  }
+}
+
+```
