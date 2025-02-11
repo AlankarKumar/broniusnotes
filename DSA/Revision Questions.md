@@ -15,3 +15,8 @@
 15. Write a function to compute Taylor series and write the mathematical form for it. (static, non-static and Horner's rule)
 16. Write a function to compute fibonnacci series using memoization. 
 17. Write a function to compute nCr using Pascal's triangle.
+
+## Problems
+
+1. https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/solutions/5860463/easy-solution-with-o-1-time-complexity-using-bit-manipulation
+2. 
