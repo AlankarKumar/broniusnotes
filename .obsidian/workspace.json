@@ -27,12 +27,38 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Arrays.md",
+                "file": "DSA/Strings.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Arrays"
+              "title": "Strings"
+            }
+          },
+          {
+            "id": "0a95c9600fa71501",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Youtube/Youtube 101.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Youtube 101"
+            }
+          },
+          {
+            "id": "329b7ba18e087487",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.10"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.10"
             }
           }
         ],
@@ -93,8 +119,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "30827e849e4d72f5",
@@ -179,12 +204,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c82532f88d2b02f",
+  "active": "9f1eaf6daf263b8e",
   "lastOpenFiles": [
-    "DSA/Programming Tricks and Patterns.md",
+    "Blog",
+    "Vite/Things to Remember.md",
+    "Youtube/Youtube 101.md",
+    "Untitled.md",
+    "DSA/Strings.md",
+    "Youtube",
     "DSA/Arrays.md",
+    "DSA/Programming Tricks and Patterns.md",
     "DSA/Recursion.md",
     "DSA/Revision Questions.md",
+    "CUDA/CUDA Project Ideas.md",
+    "CUDA",
     "C++/Quick Review.md",
     "C++/Feature Revision Notes.md",
     "C++/Concept List.md",
@@ -196,7 +229,6 @@
     "DSA",
     "Javascript/Build Optimizations.md",
     "Javascript/Content Security Policy (CSP).md",
-    "Vite/Things to Remember.md",
     "Javascript/Web Workers.md",
     "CSS/CSS Modules.md",
     "CSS/Import Inlining in CSS.md",

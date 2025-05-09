@@ -217,3 +217,129 @@ C/C++ follows row major formula.
 ## ADT
 
 
+#### Data
+1. Array Space
+2. Size
+3. Length
+
+#### Operations
+
+1. Display
+2. Add/Append'
+3. Insert
+4. Delete
+5. Search
+6. Get
+7. Set
+8. Max
+9. Min
+10. reverse
+11. Shift/Rotate
+
+```
+
+```
+
+#### Array rotation and shifting
+
+Best Approach for Different Cases
+
+    Small k? Use the Basic Shift method.
+    Large k? Use the Reverse Method.
+    Want an optimized method? Use Juggling Algorithm.
+    Binary array? Use Bitwise Operations.
+
+#### Element locations after rotation
+
+1. Formula for Left Rotation
+
+If an element is originally at index i, after k left rotations, its new index will be:
+newIndex=(i−k+n)mod  n
+newIndex=(i−k+n)modn
+Explanation
+
+    (i - k): Moves k steps left.
+    + n: Ensures the index remains positive if i - k is negative.
+    % n: Wraps around when reaching the start of the array.
+
+Example
+```
+#include <iostream>
+using namespace std;
+
+int getNewIndexLeft(int i, int n, int k) {
+    return (i - k + n) % n;
+}
+
+int main() {
+    int n = 7;  // Array size
+    int i = 3;  // Original index
+    int k = 2;  // Rotate left by 2
+
+    int newIndex = getNewIndexLeft(i, n, k);
+    cout << "New index after left rotation: " << newIndex << endl;  // Output: 1
+
+    return 0;
+}
+```
+
+
+✔️ Time Complexity: O(1)
+✔️ Space Complexity: O(1)
+2. Formula for Right Rotation
+
+If an element is originally at index i, after k right rotations, its new index will be:
+newIndex=(i+k)mod  n
+newIndex=(i+k)modn
+Explanation
+
+    (i + k): Moves k steps right.
+    % n: Wraps around when reaching the end of the array.
+
+Example
+```
+`#include <iostream>`
+`using namespace std;`
+
+`int getNewIndexRight(int i, int n, int k) {`
+    `return (i + k) % n;`
+`}`
+
+`int main() {`
+    `int n = 7;  // Array size`
+    `int i = 3;  // Original index`
+    `int k = 2;  // Rotate right by 2`
+
+    `int newIndex = getNewIndexRight(i, n, k);`
+    `cout << "New index after right rotation: " << newIndex << endl;  // Output: 5`
+
+    `return 0;`
+`}`
+
+```
+
+✔️ Time Complexity: O(1)
+✔️ Space Complexity: O(1)
+1. Finding the New Element at a Position After k Rotations
+
+If you want to find which element will be at index j after k rotations, instead of finding the index of an element, you can reverse the logic.
+
+    For Left Rotation: The element that originally was at index (j + k) % n will now be at j.
+    For Right Rotation: The element that originally was at index (j - k + n) % n will now be at j.
+1.
+```
+int getElementAfterLeftRotation(int arr[], int n, int j, int k) {
+    return arr[(j + k) % n];  // Get the element that moves into position j
+}
+
+int getElementAfterRightRotation(int arr[], int n, int j, int k) {
+    return arr[(j - k + n) % n];  // Get the element that moves into position j
+}
+```
+
+
+2. When to Use This Formula?
+
+    When you only need the position of an element after rotation instead of modifying the array.
+    When k is very large (e.g., k = 10^9 for large arrays), as it avoids unnecessary computation.
+    For competitive programming, where efficiency matters.
