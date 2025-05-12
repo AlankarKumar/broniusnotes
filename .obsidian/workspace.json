@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Strings.md",
+                "file": "Blog/Sample Blog to test Obsidian integratin.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Strings"
+              "title": "Sample Blog to test Obsidian integratin"
             }
           },
           {
@@ -204,13 +204,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f1eaf6daf263b8e",
+  "active": "9c82532f88d2b02f",
   "lastOpenFiles": [
+    "DSA/Strings.md",
+    "Blog/Sample Blog to test Obsidian integratin.md",
     "Blog",
     "Vite/Things to Remember.md",
     "Youtube/Youtube 101.md",
     "Untitled.md",
-    "DSA/Strings.md",
     "Youtube",
     "DSA/Arrays.md",
     "DSA/Programming Tricks and Patterns.md",
