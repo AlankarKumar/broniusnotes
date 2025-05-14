@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/MDX Untitled.md",
+                "file": "Blog/MDX Untitled.mdx",
                 "mode": "source",
                 "source": false
               },
@@ -204,10 +204,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c82532f88d2b02f",
+  "active": "9f1eaf6daf263b8e",
   "lastOpenFiles": [
     "Blog/Sample Blog to test Obsidian integratin.md",
-    "Blog/MDX Untitled.md",
+    "Blog/MDX Untitled.mdx",
     "DSA/Strings.md",
     "Blog",
     "Vite/Things to Remember.md",
