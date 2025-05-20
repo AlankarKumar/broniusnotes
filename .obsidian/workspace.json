@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/MDX Untitled.mdx",
+                "file": "Blog/Riding the AI hype vs Keeping you brain alive.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MDX Untitled"
+              "title": "Riding the AI hype vs Keeping you brain alive"
             }
           },
           {
@@ -204,10 +204,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9f1eaf6daf263b8e",
+  "active": "9c82532f88d2b02f",
   "lastOpenFiles": [
     "Blog/Sample Blog to test Obsidian integratin.md",
+    "Blog/Riding the AI hype vs Keeping you brain alive.md",
+    "Projects/TodoApp/Database.md",
+    "Projects/TodoApp/Backend.md",
+    "Projects/TodoApp/Frontend.md",
+    "Projects/TodoApp/Tech details.md",
+    "Profile/Linkdn Profile plan text only.md",
+    "Projects/TodoApp",
+    "Projects",
+    "Profile/Resume in Latex.md",
+    "C++/Quick Review.md",
+    "Javascript/Build Optimizations.md",
+    "svg-cache",
+    "Profile/Linkdn Profile Plan (Markdown).md",
+    "BlogResearch/Blog topics.md",
+    "Profile",
     "Blog/MDX Untitled.mdx",
+    "BlogResearch",
     "DSA/Strings.md",
     "Blog",
     "Vite/Things to Remember.md",
@@ -220,7 +236,6 @@
     "DSA/Revision Questions.md",
     "CUDA/CUDA Project Ideas.md",
     "CUDA",
-    "C++/Quick Review.md",
     "C++/Feature Revision Notes.md",
     "C++/Concept List.md",
     "Pasted image 20250121065525.png",
@@ -229,22 +244,7 @@
     "Pasted image 20250106072408.png",
     "Javascript/Dependency Pre-Bundling.md",
     "DSA",
-    "Javascript/Build Optimizations.md",
     "Javascript/Content Security Policy (CSP).md",
-    "Javascript/Web Workers.md",
-    "CSS/CSS Modules.md",
-    "CSS/Import Inlining in CSS.md",
-    "CSS/PostCss.md",
-    "CSS",
-    "Typescript/Typescript compiler.md",
-    "Vite",
-    "Javascript/Hot Module Replacement.md",
-    "Javascript/Native ES Modules.md",
-    "Javascript/Dependency Resolution.md",
-    "Typescript/Triple Slash Directives.md",
-    "gcm-linux.tar.gz",
-    "C++",
-    "Typescript",
-    "Javascript"
+    "Javascript/Web Workers.md"
   ]
 }

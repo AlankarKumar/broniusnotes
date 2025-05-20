@@ -1,4 +1,6 @@
 [
   "mdx",
-  "obsidian-custom-file-extensions-plugin"
+  "obsidian-custom-file-extensions-plugin",
+  "pseudocode-in-obs",
+  "latex-render"
 ]
