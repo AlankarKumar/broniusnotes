@@ -1,3 +1,17 @@
+---
+title: React Hook Pitfalls Nobody Talks About (Until It’s Too Late)
+description: Everyone teaches you what Hooks are. Nobody warns you what they *do*. A brutally honest guide to React Hooks pitfalls with sharp, funny examples and production-saving insights.
+author: Alankar Kumar
+date: 2025-05-22
+tags:
+  - React
+keywords: React Hooks pitfalls, useEffect bugs, React stale closures, async cleanup React, useMemo mistakes, useCallback misuse, debugging React Hooks, dependency array issues
+slug: react-hooks-pitfalls
+readingTime: 7 min
+canonicalUrl: https://yourwebsite.com/blog/react-hooks-pitfalls
+coverImage: /images/blog/react-hooks-pitfalls.png
+status: published
+---
 
 *If you're not sure you should be reading this through or investing time understanding hooks better, here's some motivation for you.* 
 
