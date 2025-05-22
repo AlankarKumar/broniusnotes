@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blog/Riding the AI hype vs Keeping you brain alive.md",
+                "file": "Blog/React Hook Pitfalls Nobody Talks About (Until It’s Too Late).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Riding the AI hype vs Keeping you brain alive"
+              "title": "React Hook Pitfalls Nobody Talks About (Until It’s Too Late)"
             }
           },
           {
@@ -204,10 +204,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9c82532f88d2b02f",
+  "active": "9f1eaf6daf263b8e",
   "lastOpenFiles": [
-    "Blog/Sample Blog to test Obsidian integratin.md",
+    "BlogResearch/Research on React Hooks.md",
+    "Blog/Untitled.md",
+    "Blog/React Hook Pitfalls Nobody Talks About (Until It’s Too Late).md",
+    "BlogResearch/Blog topics.md",
     "Blog/Riding the AI hype vs Keeping you brain alive.md",
+    "Blog/Sample Blog to test Obsidian integratin.md",
     "Projects/TodoApp/Database.md",
     "Projects/TodoApp/Backend.md",
     "Projects/TodoApp/Frontend.md",
@@ -220,7 +224,6 @@
     "Javascript/Build Optimizations.md",
     "svg-cache",
     "Profile/Linkdn Profile Plan (Markdown).md",
-    "BlogResearch/Blog topics.md",
     "Profile",
     "Blog/MDX Untitled.mdx",
     "BlogResearch",
@@ -242,9 +245,6 @@
     "Pasted image 20250121063644.png",
     "Pasted image 20250121061728.png",
     "Pasted image 20250106072408.png",
-    "Javascript/Dependency Pre-Bundling.md",
-    "DSA",
-    "Javascript/Content Security Policy (CSP).md",
-    "Javascript/Web Workers.md"
+    "DSA"
   ]
 }
