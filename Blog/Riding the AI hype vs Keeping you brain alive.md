@@ -3,7 +3,7 @@ tags:
   - aiWave
 title: "Riding the AI Hype vs Keeping Your Brain Alive: A Tech Professional’s Guide to Not Losing Your Edge"
 description: AI tools can boost productivity, but at what cost? Explore the pros, cons, and smarter ways for tech professionals to stay sharp while riding the AI wave.
-heroImage: ./blog-placeholder-3.jpg
+heroImage: ./AIvsBrain.png
 pubDate: May 20 2025
 keywords: '"AI in Development", "Productivity Tools","Software Engineering", "Debugging", "Career Growth", "AI FOMO", "Mental Agility"'
 draft: "true"

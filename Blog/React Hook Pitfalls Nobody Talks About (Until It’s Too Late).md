@@ -76,6 +76,7 @@ Each effect’s cleanup runs before its next execution or on unmount.
 
 ## ⚠️ What Actually Happens When…
 
+---
 
 ### 🎯 You have multiple effects depending on each other?
 
