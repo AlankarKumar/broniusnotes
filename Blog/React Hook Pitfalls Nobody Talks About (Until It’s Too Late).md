@@ -32,15 +32,15 @@ But in production, they start behaving like tiny chaos gremlins.
 
 **React’s sales pitch was:**
 
->     “No more classes! No more this keyword! It’s just functions now. Clean, pure, innocent functions.”
+>  “No more classes! No more this keyword! It’s just functions now. Clean, pure, innocent functions.”
 
 And that’s true — until you have:
 
-    - Multiple effects relying on each other.
+- Multiple effects relying on each other.
 
-    - Async events to clean up.
+- Async events to clean up.
 
-    - Weird bugs from stale closures that make you question your life choices.
+- Weird bugs from stale closures that make you question your life choices.
 
 **The API is clean.**
 **The consequences? Not so much.**
@@ -49,28 +49,28 @@ And that’s true — until you have:
 
 **Quick version:**
 
->     Render phase: React runs your component like a normal function. All Hooks register themselves in order.
+> Render phase: React runs your component like a normal function. All Hooks register themselves in order.
 > 
->     Commit phase: DOM updates.
+> Commit phase: DOM updates.
 > 
->     Post-commit:
+> Post-commit:
 > 
->         useLayoutEffect runs synchronously (block render).
+> useLayoutEffect runs synchronously (block render).
 > 
->         useEffect runs asynchronously after paint.
+> useEffect runs asynchronously after paint.
 
 And here’s the trick:
 Each effect’s cleanup runs before its next execution or on unmount.
 
 ## 📊 Visual Summary:
 
-```
+```text
 [Render] → [Commit DOM] → [useLayoutEffect (sync)] → [useEffect (async)]
              |                                    |
              |                                    +-- side effects start
              +-- function body runs, Hooks register
-
 ```
+
 > Bonus: No, React does not guarantee the order of multiple useEffects in the same render. Another plot twist.
 > 
 
@@ -90,7 +90,7 @@ Bad Example:
 useEffect(() => { setData(fetchData()); }, []);`
 useEffect(() => { if (data) doSomething(data); }, [data]);
 
-```
+
 
 **Fix:**
 Combine them or use a custom hook:

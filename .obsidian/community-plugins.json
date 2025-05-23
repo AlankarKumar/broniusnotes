@@ -2,5 +2,6 @@
   "mdx",
   "obsidian-custom-file-extensions-plugin",
   "pseudocode-in-obs",
-  "latex-render"
+  "latex-render",
+  "templater-obsidian"
 ]
